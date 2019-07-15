@@ -1,20 +1,45 @@
-function correr(tag)
+// funcion recursiva para aplicar clase global a todos los elementos
+
+function recurAdd(tag)
 {
+    debugger;
     var temp = document.querySelector(tag);
     temp.classList.add("global");
-    for(let i=0;i<temp.children.length;i++)
+    if(!temp.children.length>0)
     {
-        if(temp.children[i].children.length > 0)
+        return;
+    }
+    else
+    {
+        for(var i=0;i<temp.children.length;i++)
         {
-            correr(temp.children[i].tagName);
+            recurAdd(tag + ">" + ":nth-child("+ Number(i+1) +")");   
         }
-        else
+    }
+    return;
+}
+// funcion para quitarlos
+function recurRem(tag)
+{
+    debugger;
+    var temp = document.querySelector(tag);
+    temp.classList.remove("global");
+    if(!temp.children.length>0)
+    {
+        return;
+    }
+    else
+    {
+        for(var i=0;i<temp.children.length;i++)
         {
-            temp.children[i].classList.add("global");
+            recurRem(tag + ">" + ":nth-child("+ Number(i+1) +")");   
         }
     }
     return;
 }
 
-correr("html");
+// corriendo funciones
+recurAdd("html");
+//recurRem("html");
+
 
