@@ -5,3 +5,24 @@
     border-color: black;
 }
 
+.header
+{
+    padding: 0.5em 0 0.5em 7em; 
+}
+
+@media (max-width:767px)
+{
+    .header
+    {
+        padding: 0.5em 30% 0.5em 40% !important;
+    }
+}
+
+@media (max-width:366px)
+{
+    .header
+    {
+        padding: 0.5em 10% 0.5em 20% !important;
+    }
+}
+
