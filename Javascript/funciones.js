@@ -2,7 +2,7 @@
 
 function recurAdd(tag)
 {
-    debugger;
+    //debugger;
     var temp = document.querySelector(tag);
     temp.classList.add("global");
     if(!temp.children.length>0)
@@ -18,10 +18,11 @@ function recurAdd(tag)
     }
     return;
 }
-// funcion para quitarlos
+
+// funcion recursiva para quitarlas
 function recurRem(tag)
 {
-    debugger;
+    //debugger;
     var temp = document.querySelector(tag);
     temp.classList.remove("global");
     if(!temp.children.length>0)
