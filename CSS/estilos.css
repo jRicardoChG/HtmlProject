@@ -1,3 +1,4 @@
+/* Para poner border a todos los elementos */ 
 .global
 {
     border-style: dotted;
@@ -5,6 +6,7 @@
     border-color: black;
 }
 
+/* responsibidad de la pagina header */ 
 .header
 {
     padding: 0.5em 0 0.5em 7em; 
@@ -25,4 +27,55 @@
         padding: 0.5em 10% 0.5em 20% !important;
     }
 }
+
+@media (min-width:366px) and (max-width:398px)
+{
+    .header
+    {
+        padding: 0.5em 10% 0.5em 15% !important;
+    }
+}
+
+@media (min-width:768px)
+{
+    .header:nth-child(1)
+    {
+        padding: 0.5em 10% 0.5em 10% !important;
+    }
+    .header:nth-child(2)
+    {
+        padding: 0.5em 10% 0.5em 7.5% !important;
+    }
+    .header:nth-child(3)
+    {
+        padding: 0.5em 0% 0.5em 4% !important;
+    }
+    .header:nth-child(4)
+    {
+        padding: 0.5em 10% 0.5em 9% !important;
+    }
+} 
+
+@media (min-width:992px)
+{
+    .header:nth-child(1)
+    {
+        padding: 0.5em 10% 0.5em 14% !important;
+    }
+    .header:nth-child(2)
+    {
+        padding: 0.5em 10% 0.5em 10.5% !important;
+    }
+    .header:nth-child(3)
+    {
+        padding: 0.5em 0% 0.5em 8% !important;
+    }
+    .header:nth-child(4)
+    {
+        padding: 0.5em 10% 0.5em 11% !important;
+    }
+} 
+/*Responsabilidad de los articulos*/
+
+
 
