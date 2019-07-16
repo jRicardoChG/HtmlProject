@@ -75,7 +75,33 @@
         padding: 0.5em 10% 0.5em 11% !important;
     }
 } 
-/*Responsabilidad de los articulos*/
 
+/*Responsibidad de los articulos*/
+/* responsibidad de las imagenes*/
 
+@media(max-width:366px)
+{
+    .imagenes
+    {
+        width:350px;
+        height:200px;
+    }
+}
 
+@media(max-width:768px) and (min-width:366px)
+{
+    .imagenes
+    {
+        width:
+        height:400px;
+    }
+}
+
+@media(min-width:768px)
+{
+    .imagenes
+    {
+        width:800px;
+        height:400px;
+    }
+}
