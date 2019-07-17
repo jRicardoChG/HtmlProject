@@ -1,3 +1,5 @@
+@import url(/CSS/colores.css);
+@import url(/CSS/ocultos.css);
 /* Para poner border a todos los elementos */ 
 .global
 {
@@ -6,13 +8,24 @@
     border-color: black;
 }
 
-/* responsibidad de la pagina header */ 
+/* responsibidad del header */ 
+
+/* tamaño extra-small*/ 
+@media (min-width:576px)
+{
+    #menu
+    {
+        display:none;
+    }
+}
+
+/*tamaño small*/
 .header
 {
     padding: 0.5em 0 0.5em 7em; 
 }
 
-@media (max-width:767px)
+@media (max-width:768px)
 {
     .header
     {
@@ -20,22 +33,15 @@
     }
 }
 
-@media (max-width:366px)
+@media (max-width:540px)
 {
     .header
     {
-        padding: 0.5em 10% 0.5em 20% !important;
+        display:none !important;
     }
 }
 
-@media (min-width:366px) and (max-width:398px)
-{
-    .header
-    {
-        padding: 0.5em 10% 0.5em 15% !important;
-    }
-}
-
+/* Resposibidad a tamaño mediano*/
 @media (min-width:768px)
 {
     .header:nth-child(1)
@@ -55,7 +61,7 @@
         padding: 0.5em 10% 0.5em 9% !important;
     }
 } 
-
+/* tamaño grande*/
 @media (min-width:992px)
 {
     .header:nth-child(1)
@@ -78,30 +84,3 @@
 
 /*Responsibidad de los articulos*/
 /* responsibidad de las imagenes*/
-
-@media(max-width:366px)
-{
-    .imagenes
-    {
-        width:350px;
-        height:200px;
-    }
-}
-
-@media(max-width:768px) and (min-width:366px)
-{
-    .imagenes
-    {
-        width:
-        height:400px;
-    }
-}
-
-@media(min-width:768px)
-{
-    .imagenes
-    {
-        width:800px;
-        height:400px;
-    }
-}

@@ -2,7 +2,6 @@
 
 function recurAdd(tag)
 {
-    //debugger;
     var temp = document.querySelector(tag);
     temp.classList.add("global");
     if(!temp.children.length>0)
@@ -22,7 +21,6 @@ function recurAdd(tag)
 // funcion recursiva para quitarlas
 function recurRem(tag)
 {
-    //debugger;
     var temp = document.querySelector(tag);
     temp.classList.remove("global");
     if(!temp.children.length>0)
@@ -42,5 +40,3 @@ function recurRem(tag)
 // corriendo funciones
 recurAdd("html");
 //recurRem("html");
-
-
