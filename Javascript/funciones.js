@@ -1,15 +1,30 @@
-// funcion recursiva para aplicar clase global a todos los elementos
+/*   ESTE CODIGO SE IGNORA DADO QUE SE VAN A USAR SUBCLASES CSS
+// creo vectores con los elementos a añadir eventos
 var parfLista = document.querySelectorAll(".cmtRecm");
 var lista = document.querySelectorAll(".lista > li > input");
-
-(function (event) {
-    event.preventDefault();
+   
+// añado los eventos click a los juegos recomendados
+function eventos() {
     for (j = 0; j < lista.length; j++) {
         lista[j].addEventListener("click", ocultar);
     }
-});
+};
 
 
+function ocultar() {
+    for (i = 0; i < lista.length; i++) {
+        if (lista[i].checked == false) {
+            parfLista[i].classList.add("oculto");
+        } else if (lista[i].checked == true) {
+            parfLista[i].classList.remove("oculto");
+        }
+    }
+}
+
+
+*/
+
+// funcion recursiva para aplicar clase global a todos los elementos
 function recurAdd(tag) {
     var temp = document.querySelector(tag);
     temp.classList.add("global");
@@ -36,15 +51,8 @@ function recurRem(tag) {
     }
     return;
 }
-var ocultar = function () {
-    for (i = 0; i < lista.length; i++) {
-        if (lista[i].checked == false) {
-            parfLista[i].classList.add("oculto");
-        } else if (lista[i].checked == true) {
-            parfLista[i].classList.remove("oculto");
-        }
-    }
-}
+
 // corriendo funciones
-recurAdd("html");
+window.onload = recurAdd("html");
+//window.onload = eventos();
 //recurRem("html");
