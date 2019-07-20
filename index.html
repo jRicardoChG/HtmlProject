@@ -14,86 +14,109 @@
 
 <body>
     <header>
-        <div id = "header" class="container-fluid">
-            <section class="row">
+        <div id="header" class="container-fluid row">
+            <div style="width:50px; height:50px; overflow:hidden;" id="logo" class="col-5 row ">
+                <h2 class="text-center">Logo de la empresa</h2>
+            </div>
+            <div class="col-7 row">
                 <div class="header col-sm-12 col-md-3 text-center"><a href=#>Logo</a></div>
                 <div class="header col-sm-12 col-md-3 text-center"><a href=#>Usuarios</a></div>
                 <div class="header col-sm-12 col-md-3 text-center"><a href=#>Lista de Juegos</a></div>
                 <div class="header col-sm-12 col-md-3 text-center"><a href=#>Ayuda</a></div>
-            </section>
-        </div>
-        <div id="menu" class = "hidden container-fluid row">
-            <div class="col-2">
-                    <input id="menubarras" type="checkbox">
-                    <label id ="menubarrasl" for="menubarras" ><img width="25px" height="25px" src="/imgs/Menú-hamburguesa-herramienta-practica-o-icono-inutil.png"></label>        
             </div>
-            <div class = "col-10 text-center">
-                    <h2 >Menu</h2>
+        </div>
+        <div id="menu" class="hidden container-fluid row">
+            <div class="col-2">
+                <input id="menubarras" type="checkbox">
+                <label id="menubarrasl" for="menubarras"><img width="25px" height="25px"
+                        src="/imgs/Menú-hamburguesa-herramienta-practica-o-icono-inutil.png"></label>
+                <div class="menuDesplegable">
+                    <div style="padding-bottom: 20px;">Logo</div>
+                    <div>Usuarios</div>
+                    <div>Lista de juegos</div>
+                    <div>Ayuda</div>
+                </div>
+            </div>
+            <div class="col-10 text-center">
+                <h2>Menu</h2>
             </div>
         </div>
     </header>
     <main>
-        <article id = "banner" class = "container-fluid"> 
+        <article id="banner" class="container-fluid">
         </article>
-        <article class = "container-fluid">
+        <article class="container-fluid">
             <h2>Noticias</h2>
-            <div class = "banner">
+            <div class="banner">
             </div>
         </article>
-        <article class = "container-fluid">
+        <article class="container-fluid">
             <h2>Recomendados del mes</h2>
             <ul class="lista">
-                <li><input type="checkbox" style="display:none;" id="lista1"><label for="lista1">Castlevania Lords of Shadows</label></li>
-                <div class="cmtRecm">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                    </p>
-                </div>
-                <li><input type="checkbox" style="display:none;" id="lista2"><label for="lista2">Halo the master chief collection</label></li>
-                <div class="cmtRecm">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                        </p>
+                <li>
+                    <input class="inputs" type="checkbox" style="display:none;" id="lista1"><label class="inputs"
+                        for="lista1">Nintendo</label>
+                    <div class="cmtRecm oculto">
+                        <ul>
+                            <li>Super Smash Bros Ultimate</li>
+                            <li>Mario Maker 2</li>
+                            <li>Splatoon 2</li>
+                            <li>The legend of Zelda breath of the Wild</li>
+                            <li>Doom</li>
+                        </ul>
                     </div>
-                <li><input type="checkbox" style="display:none;" id="lista3"><label for="lista3">Super smash bros Ultimate</label></li>
-                <div class="cmtRecm">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                        </p>
+                </li>
+
+                <li>
+                    <input class="inputs" type="checkbox" style="display:none;" id="lista2"><label class="inputs"
+                        for="lista2">PlayStation</label>
+                    <div class="cmtRecm oculto">
+                        <ul>
+                            <li>Xenua Sacrifice</li>
+                            <li>Kingdom hearts 3</li>
+                            <li>Crash Bandicoot N-Sane trilogy</li>
+                            <li>Uncharted 4 a Thief's end</li>
+                            <li>Grand Turismo</li>
+                        </ul>
                     </div>
-                <li><input type="checkbox" style="display:none;" id="lista4"><label for="lista4">The legend of zelda breath of the wild</label></li>
-                <div class="cmtRecm">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                        </p>
+                </li>
+
+                <li>
+                    <input class="inputs" type="checkbox" style="display:none;" id="lista3"><label class="inputs"
+                        for="lista3">Xbox</label>
+                    <div class="cmtRecm oculto">
+                        <ul>
+                            <li>Halo 5: Guardians</li>
+                            <li>Forza</li>
+                            <li>Assassins Creed Odysey</li>
+                            <li>Star Wars Jedy Returns</li>
+                            <li>Shadows of Mordor</li>
+                        </ul>
                     </div>
-                <li><input type="checkbox" style="display:none;" id="lista5"><label for="lista5">Xenua Sacrifice</label></li>
-                <div class="cmtRecm">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                        </p>
+                </li>
+
+                <li>
+                    <input class="inputs" type="checkbox" style="display:none;" id="lista4"><label class="inputs"
+                        for="lista4">PC</label>
+                    <div class="cmtRecm oculto">
+                        <ul>
+                            <li>Halo The master Chief Collection</li>
+                            <li>Anio</li>
+                            <li>The age of Empires 2 Definitive Edition</li>
+                            <li>Total War</li>
+                            <li>World of Warcraft Battle for Azeroth 1.2</li>
+                        </ul>
                     </div>
-                <li><input type="checkbox" style="display:none;" id="lista6"><label for="lista6">Kingdom Hearts 3</label></li>
-                <div class="cmtRecm">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                        </p>
-                    </div>
-                <li><input type="checkbox" style="display:none;" id="lista7"><label for="lista7">Mario Maker 2</label></li>
-                <div class="cmtRecm">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptas illo aperiam eos voluptatum inventore voluptatibus dolorem! Rerum, vitae neque. Similique natus nostrum quod veniam unde quisquam reprehenderit hic dignissimos.
-                        </p>
-                    </div>
+                </li>
             </ul>
         </article>
-        <article class = "container-fluid">
+        <article class="container-fluid">
             <h2>Actualizaciones</h2>
-            
+
         </article>
     </main>
     <footer>
-        <section class = "container-fluid">
+        <section class="container-fluid">
             <h2>Derechos de autor</h2>
             <h2>Contactanos</h2>
             <div>Datos personales</div>
