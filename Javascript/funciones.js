@@ -53,6 +53,6 @@ function recurRem(tag) {
 }
 
 // corriendo funciones
-window.onload = recurAdd("html");
+//window.onload = recurAdd("html");
 //window.onload = eventos();
 //recurRem("html");
