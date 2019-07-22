@@ -15,13 +15,43 @@
 /*HEADER*/
 /*----------------------------------------------------------------------------*/
 
+ #header
+ {
+     display: flex;
+ }
+ #menu
+ {
+     display: flex;
+ }
 .header
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+@media (max-width:768px)
+{
+    #logo > img
+    {
+        position: absolute;
+        width: auto;
+        height: 100%;
+    }    
+}
+@media (min-width:768px)
+{
+    #logo 
+    {
+        width: 100px;
+        height: 70px;
+    }  
+    #logo > img
+    {
+        position: absolute;
+        width: auto;
+        height: 100%;
+    } 
+}
 
 @media (max-width:575px)
 {
@@ -64,12 +94,10 @@
     overflow: hidden;
     transition: all 0.4s;
     position:absolute;
-    display:block;
-    color: white;
     font-size: 25px;
     top:45px;
    /* left:-20px;*/
-    height:100vh;
+    height:93vh;
     z-index: 100;
 
 }
