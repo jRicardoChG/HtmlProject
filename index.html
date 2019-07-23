@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/Javascript/funciones.js" defer></script>
     <link rel="stylesheet" href="/CSS/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="/Javascript/funciones.js" defer></script>
     <title>Home</title>
 </head>
-
 <body>
     <header>
         <div id="header" class="container">
@@ -44,36 +49,46 @@
     </header>
     <main>
         <article class="container">
+<div class = "container">
             <h2>Noticias</h2>
-            <div class="banner">
-                <div id="btnDerBanner">
-                    <div>
-                        <input type="checkbox" id="chkflechaDer" style="display:none;">
-                        <label for="chkflechaDer">
-                            <img src="/imgs/flechaDer.png">
-                        </label>
+            <div id="slider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                    <li data-target="#slider" data-slide-to="3"></li>
+                    <li data-target="#slider" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/imgs/Nintendo-Switch-Lite-1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="/imgs/g5_kait_and_marcus_1280x720-a0e88906d6d94334ba9e339355ff4fb1.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/imgs/zelda-breath.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/imgs/Halo-The-Master-Chief-Collection.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/imgs/MARIO_PORTADA-k6rG-U601588910703s0B-624x385@El Correo.jpg"
+                            alt="Third slide">
                     </div>
                 </div>
-                <div id="btnIzqBanner">
-                    <div>
-                        <input type="checkbox" id="chkflechaIzq" style="display:none;">
-                        <label for="chkflechaIzq">
-                            <img src="/imgs/flechaIzq.png">
-                        </label>
-                    </div>
-                </div>
-                <div class="imgsDiv">
-                    <div>
-                        <div><img class="imgsBanner" src="/imgs/Nintendo-Switch-Lite-1.jpg"></div>
-                        <div><img class="imgsBanner" src="/imgs/zelda-breath.jpg"></div>
-                        <div><img class="imgsBanner"
-                                src="/imgs/MARIO_PORTADA-k6rG-U601588910703s0B-624x385@El Correo.jpg"></div>
-                        <div><img class="imgsBanner"
-                                src="/imgs/g5_kait_and_marcus_1280x720-a0e88906d6d94334ba9e339355ff4fb1.jpg"></div>
-                        <div><img class="imgsBanner" src="/imgs/Halo-The-Master-Chief-Collection.jpg"></div>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
+</div>
         </article>
         <article class="container">
             <h2>Recomendados del mes</h2>

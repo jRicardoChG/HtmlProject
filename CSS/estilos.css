@@ -169,13 +169,15 @@
 {
     display: flex;
     width: 500%;
-    animation : algo 20s infinite alternate;
+    /*animation : algo 20s infinite alternate;*/
+    transition: 3s;
 }
 
 .imgsDiv > div > div
 {
     width:100%;
 }
+/*
 @keyframes algo
 {
     0%  {margin-left: 0%;}
@@ -188,7 +190,7 @@
     75% {margin-left: -300%;}
     80% {margin-left: -400%;}
     100% {margin-left: -400%;}
-}
+}*/
 
 .imgsBanner
 {
