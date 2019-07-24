@@ -1,29 +1,4 @@
 
-/*   ESTE CODIGO SE IGNORA DADO QUE SE VAN A USAR SUBCLASES CSS
-// creo vectores con los elementos a añadir eventos
-var parfLista = document.querySelectorAll(".cmtRecm");
-var lista = document.querySelectorAll(".lista > li > input");
-   
-// añado los eventos click a los juegos recomendados
-function eventos() {
-    for (j = 0; j < lista.length; j++) {
-        lista[j].addEventListener("click", ocultar);
-    }
-};
-
-
-function ocultar() {
-    for (i = 0; i < lista.length; i++) {
-        if (lista[i].checked == false) {
-            parfLista[i].classList.add("oculto");
-        } else if (lista[i].checked == true) {
-            parfLista[i].classList.remove("oculto");
-        }
-    }
-}
-
-
-*/
 
 // funcion recursiva para aplicar clase global a todos los elementos
 function recurAdd(tag) {
@@ -53,4 +28,6 @@ function recurRem(tag) {
     return;
 }
 
+
+recurAdd("html");
 
