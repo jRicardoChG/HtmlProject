@@ -17,6 +17,7 @@
     <script src="/Javascript/funciones.js" defer></script>
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <div id="header" class="container">
@@ -24,10 +25,10 @@
                 <img src="/imgs/logo.jpg">
             </div>
             <div class="col-7 row">
-                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Logo</a></div>
-                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Usuarios</a></div>
-                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Lista de Juegos</a></div>
-                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Ayuda</a></div>
+                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Home</a></div>
+                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Login</a></div>
+                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Foro Checkpoint </a></div>
+                <div class="header col-sm-12 col-md-3 text-center"><a href=#>Noticias</a></div>
             </div>
         </div>
         <div id="menu" class="hidden container">
@@ -43,16 +44,15 @@
                 </div>
             </div>
             <div class="col-10 text-center">
-                <h2>Menu</h2>
+                <h2>Checkpoint</h2>
             </div>
         </div>
     </header>
     <main>
         <article class="container">
-<div class = "container">
             <h2>Noticias</h2>
             <div id="slider" class="carousel slide" data-ride="carousel">
-                <ol id = "olB"class="carousel-indicators">
+                <ol id="olB" class="carousel-indicators">
                     <li id="liB1" data-target="#slider" data-slide-to="0" class="active"></li>
                     <li id="liB2" data-target="#slider" data-slide-to="1"></li>
                     <li id="liB3" data-target="#slider" data-slide-to="2"></li>
@@ -61,22 +61,19 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/imgs/Nintendo-Switch-Lite-1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="/imgs/switchStretch.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="/imgs/g5_kait_and_marcus_1280x720-a0e88906d6d94334ba9e339355ff4fb1.jpg"
-                            alt="Second slide">
+                        <img class="d-block w-100" src="/imgs/marioStretch.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/imgs/zelda-breath.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="/imgs/zeldaStretch.jpg" alt="Third slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/imgs/Halo-The-Master-Chief-Collection.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="/imgs/HaloStretch.jpg" alt="Third slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/imgs/MARIO_PORTADA-k6rG-U601588910703s0B-624x385@El Correo.jpg"
-                            alt="Third slide">
+                        <img class="d-block w-100" src="/imgs/Gears5Stretch.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
@@ -88,7 +85,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-</div>
         </article>
         <article class="container">
             <h2>Recomendados del mes</h2>
@@ -151,14 +147,42 @@
             </ul>
         </article>
         <article class="container">
-            <h2>Actualizaciones</h2>
+            <h2>Streamer Destacado</h2>
+            <div>
+                <iframe id="videos" src="https://www.youtube.com/embed/dk7JkSArEdQ">
+                </iframe>
+            </div>
         </article>
     </main>
     <footer>
         <section class="container">
-            <h2>Derechos de autor</h2>
-            <h2>Contactanos</h2>
-            <div>Datos personales</div>
+            <div id="contactos">
+                <h2>Contactos</h2>
+                <h3>Checkpoint</h3>
+                <h5><small>Pagina de noticias de videojuegos y creada como ejercicio para aprender a programar CSS y
+                        html</small></h5>
+                <div>
+
+                    <h3>Creador</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3 imagenCreador">
+                            <img src="/imgs/logo.jpg">
+                        </div>
+                        <div class="col-12 col-md-6 textoContactos">
+                            <div>
+                                <p><b>Nombre:</b></p>
+                                <p>Jaime Ricardo Chávez González</p>
+                                <p><b>Email:</b></p>
+                                <p>richago29@gmail.com</p>
+                                <p>Colombia</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 imagenCreador">
+                                <img src="/imgs/logo.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
