@@ -11,19 +11,46 @@
     /*margin:0 !important;*/
 }
 /*----------------------------------------------------------------------------*/
-
 /*HEADER*/
 /*----------------------------------------------------------------------------*/
+.menutitulo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menutitulo > div
+{
+    width:100%;
+}
+#header
+ {
+    display: flex;
+ }
 
- #header
+#menu
  {
-     display: flex;
+    display: flex;
  }
- #menu
- {
-     display: flex;
- }
+
 .header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoncentrar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo > h2
+{
+    margin:0px;
+    padding: 0px;
+}
+#titulo
 {
     display: flex;
     justify-content: center;
@@ -38,6 +65,7 @@
         height: 100%;
     }    
 }
+
 @media (min-width:768px)
 {
     #logo 
@@ -71,6 +99,7 @@
 {
     width: 0px;
 }
+
 #menubarras:checked ~ .menuDesplegable
 {
     width:100vh;
@@ -79,9 +108,9 @@
 #barras
 {
     padding: 0px;
-    /*margin: 0px;*/
     z-index: 100;
 }
+
 #menubarrasl > img
 {
     width: 30px;
@@ -95,11 +124,9 @@
     transition: all 0.4s;
     position:absolute;
     font-size: 25px;
-    top:45px;
-   /* left:-20px;*/
+    top:51px;
     height:93vh;
     z-index: 100;
-
 }
 
 .menuDesplegable > div 
@@ -120,7 +147,6 @@
     {
         display:none !important;
     }
-
 }
 /*----------------------------------------------------------------------------*/
 
@@ -133,6 +159,7 @@
     width: 10px;
     height: 10px;
 }
+
 #slider a span
 {
     width: 40px;
@@ -142,12 +169,15 @@
 /* LISTA DE RECOMENDADOS*/
 /*----------------------------------------------------------------------------*/
 /* Acomodo la viñeta dado que esta muy ancha por defecto */ 
-.cmtRecm{
+
+.cmtRecm
+{
     transition: all 0.5s;
     position: relative;
     overflow: hidden;
     vertical-align: center;
 }
+
 .lista
 {
     padding-inline-start: 25px;
@@ -159,10 +189,13 @@
     margin: 0px;
 }
 
-.inputs:not(checked) ~ div{
+.inputs:not(checked) ~ div
+{
     height:0px;
 }
-.inputs:checked ~ div{
+
+.inputs:checked ~ div
+{
     height:133px;
 }
 /*----------------------------------------------------------------------------*/
@@ -178,24 +211,35 @@
 /* Contactos */
 @media (min-width:768px)
 {
+    .Creador
+    {
+        padding: 0px !important;
+    }
     .imagenCreador > img
     {
         width: 100%;
         height:auto;
     }
-    /* .textoContactos
+    .textoContactos
     {
+        padding: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-    } */
+    }
+    .textoContactos > div 
+    {
+        width: 100%;
+    }
     .imagenCreador
     {
+        padding: 0px !important;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
+
 @media (max-width:769px)
 {
     .imagenCreador
@@ -219,7 +263,6 @@
 
 #contactos > div > div > div > div > p
 {
-
     font-style: italic;
     text-align: center;
     margin:0px;
