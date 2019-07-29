@@ -1,0 +1,52 @@
+/* Para poner border a todos los elementos : JAVASCRIPT */
+/*----------------------------------------------------------------------------*/
+$colorFondo:#011C40;
+$colorFuente: white;
+$colorhover:#9298A6;
+
+.global {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: rgb(161, 160, 160);
+}
+
+#header {
+    background-color: $colorFondo;
+    div > div > div:hover
+    {
+        border-radius: 6px;
+        background-color: $colorhover;
+    }
+    .header {
+        a {
+            color: $colorFuente;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        :hover
+        {
+            background-color: $colorhover;
+        }
+    }
+}
+#menu
+{
+    background-color: $colorFondo;
+    color: $colorFuente;
+    .botoncentrar div:hover
+    {
+        background-color: $colorhover;
+    }
+}
+
+.menuDesplegable {
+    background-color: $colorFondo;
+    opacity: 0.9;
+
+    div {
+        color: $colorFuente;
+    }
+
+    div:hover {
+        background-color: $colorhover;
+    }
+}
