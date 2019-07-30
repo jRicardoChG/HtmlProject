@@ -1,60 +1,38 @@
 @charset "UTF-8";
 /* Para poner border a todos los elementos : JAVASCRIPT */
 /*----------------------------------------------------------------------------*/
-/*Colores prinicpales de la pagina*/
-/*    */
-main > article {
-  background-color: #e6e6e6; }
-
-footer section {
-  background-color: #e6e6e6; }
-
-main :nth-child(1) {
-  padding-top: 7px; }
-
-article ul {
-  margin-bottom: 0px; }
-
-article h2 {
-  background-color: #012840;
-  color: white;
-  padding-left: 10px;
-  border-radius: 5px; }
-
-section h2 {
-  background-color: #012840;
-  color: white;
-  padding-left: 10px;
-  border-radius: 5px; }
+.global {
+  border-style: dotted;
+  border-width: 1px;
+  border-color: #a1a0a0; }
 
 #header {
-  background-color: #012840; }
+  background-color: #011C40; }
   #header div > div > div:hover {
     border-radius: 6px;
-    background-color: #337AA6; }
+    background-color: #9298A6; }
   #header .header a {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
   #header .header :hover {
-    background-color: #337AA6; }
+    background-color: #9298A6; }
 
 #menu {
-  background-color: #012840;
+  background-color: #011C40;
   color: white; }
   #menu div h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-style: oblique; }
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; }
   #menu .botoncentrar div:hover {
-    background-color: #337AA6; }
+    background-color: #9298A6; }
 
 .menuDesplegable {
-  background-color: #012840;
+  background-color: #011C40;
   opacity: 0.9; }
   .menuDesplegable div {
     color: white; }
   .menuDesplegable div:hover {
-    background-color: #337AA6; }
+    background-color: #9298A6; }
 
 /*----------------------------------------------------------------------------*/
 /*HEADER*/
@@ -240,4 +218,4 @@ section h2 {
   margin: 0px;
   width: 100%; }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.scss.map */
