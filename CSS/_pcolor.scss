@@ -1,6 +1,7 @@
 /* Para poner border a todos los elementos : JAVASCRIPT */
 /*----------------------------------------------------------------------------*/
 $colorFondo:#012840;
+$colorFondoBody: #01101a;
 $colorFuente: white;
 $colorhover:#337AA6;
 /*Colores prinicpales de la pagina*/
@@ -27,7 +28,7 @@ footer section
 {
     background-color: $color6;
 } 
-main :nth-child(1) 
+main article
 {
     padding-top: 7px;
 }
@@ -95,4 +96,20 @@ section h2
     div:hover {
         background-color: $colorhover;
     }
+}
+
+.lista > li > label
+{
+    padding-left: 10px;
+}
+
+.lista > li > label:hover
+{
+    border-radius: 5px;
+    background-color:$color5;
+}
+
+html body
+{
+    background-color: $colorFondoBody;
 }
