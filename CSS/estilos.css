@@ -143,7 +143,7 @@ html body {
   width: 0px; }
 
 #menubarras:checked ~ .menuDesplegable {
-  width: 100vh; }
+  width: 100%; }
 
 #barras {
   padding: 0px;
@@ -166,7 +166,7 @@ html body {
 .menuDesplegable > div {
   padding: 5px 0px 5px 10px;
   overflow: hidden;
-  width: 100vh; }
+  width: 100%; }
 
 /* tamaño extra-small*/
 @media (min-width: 576px) {
@@ -258,5 +258,16 @@ html body {
   text-align: center;
   margin: 0px;
   width: 100%; }
+
+table {
+  width: 100%; }
+  table td {
+    width: 33%;
+    text-align: center; }
+
+#html p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px; }
 
 /*# sourceMappingURL=estilos.css.map */
