@@ -7,6 +7,7 @@ main > article {
   background-color: #e6e6e6; }
 
 footer section {
+  padding-top: 7px;
   background-color: #e6e6e6; }
 
 main article {
@@ -26,6 +27,9 @@ section h2 {
   color: white;
   padding-left: 10px;
   border-radius: 5px; }
+
+#html a {
+  text-decoration: none; }
 
 #header {
   background-color: #012840; }
@@ -51,7 +55,7 @@ section h2 {
 .menuDesplegable {
   background-color: #012840;
   opacity: 0.9; }
-  .menuDesplegable div {
+  .menuDesplegable div a {
     color: white; }
   .menuDesplegable div:hover {
     background-color: #337AA6; }
